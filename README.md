@@ -4,5 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To run the app:
 
-1) npm i
-2) npm start
+1. npm i
+2. npm start
+3. enjoy

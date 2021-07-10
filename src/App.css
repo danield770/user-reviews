@@ -1,0 +1,80 @@
+:root {
+  --blue: #6fa8dc;
+  --shadow: 0 0 5px 2px #777;
+}
+body {
+  margin: 0;
+}
+h2 {
+  color: var(--blue) ;
+  margin: 0;
+}
+.app {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #eee;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  box-sizing: border-box; */
+}
+
+form {
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 0;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.btn--primary {
+  width: 4rem;
+  align-self: flex-end;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--blue) 
+}
+.review-list {
+  list-style: none;
+  padding: 0;
+}
+.review-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  box-shadow: var(--shadow);
+  margin: 2rem 0;
+  padding: 0.5rem;
+  position: relative;
+}
+.review-item-edit {
+  margin: 2rem 0;
+}
+img {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.item-name {
+  grid-column: 2 / 3;
+}
+.item-msg {
+  grid-column: 2/3;
+}
+.btn-group {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
